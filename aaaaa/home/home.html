@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Na Sua Estante</title>
+  <link rel="icon" href="../../img/oier.png" type="image/png">
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="home.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Na Sua Estante</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li>
+          <div class="user-menu">
+            <img src="../../img/f67f908dc784cd97abb059414c20bda3.jpg" class="avatar" onclick="AbrirMenu()" />
+            <div class="dropdown" id="dropdownMenu">
+              <a href="../profile/profile.html">Minha Biblioteca</a>
+              <a href="../login/login.html">Sair</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>  
+
+  <main>
+    <h2>Livros em Destaque</h2>
+    <div class="caixa-livros">
+      <span class="arrow arrow-left" onclick="moveCarousel('left')">&#8592;</span>
+
+      <div class="grade-livros">
+        <div class="ficha-livro">
+          <img src="/img/book-3.webp" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>A Metamorfose</h3>
+            <p>⭐ 4.7</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-2.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>Os Sete Maridos de Evelyn Hugo</h3>
+            <p>⭐ 4.3</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-1.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>Carmilla</h3>
+            <p>⭐ 5.0</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-4.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>O Código Da Vinci</h3>
+            <p>⭐ 3.7</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-5.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>Me Apaixonei Pela Vilã</h3>
+            <p>⭐ 4.8</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-6.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>Mr Mercedes</h3>
+            <p>⭐ 4.9</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-7.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>A Queda Da Casa Usher</h3>
+            <p>⭐ 5.0</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-10.jpg">
+          <div class="livro-nome">
+            <h3>O Processo</h3>
+            <p>⭐ 5.0</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <h2>Favoritos dos Fãs</h2>
+    <div class="caixa-livros">
+      <div class="grade-livros">
+        <div class="ficha-livro">
+          <img src="/img/book-8.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>Percy Jackson</h3>
+            <p>⭐ 4.8</p>
+          </div>
+        </div>
+        <div class="ficha-livro">
+          <img src="/img/book-4.jpg" alt="Capa do livro">
+          <div class="livro-nome">
+            <h3>O Código Da Vinci</h3>
+            <p>⭐ 4.5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Autores em Destaque</h2>
+    <div class="autor-grade">
+      <div class="autor-ficha">
+        <img src="/img/icon-kafka.jpg">
+        <div class="autor-info">
+          <h3>Franz Kafka</h3>
+          <p>Famoso por <br>A Metamorfose</p>
+        </div>
+      </div>
+
+      <div class="autor-ficha">
+        <img src="/img/icon-edgar.jpg">
+        <div class="autor-info">
+          <h3>Edgar Allan Poe</h3>
+          <p>Famoso pela Queda Da <br> Mansão Usher</p>
+        </div>
+      </div>
+
+      <div class="autor-ficha">
+        <img src="/img/icon-taylor.jpg">
+        <div class="autor-info">
+          <h3>Taylor Jenkins<br> Reid</h3>
+          <p>Famosa pelo Sete <br> Maridos de <br> Evelyn Hugo </p>
+        </div>
+      </div>
+
+      <div class="autor-ficha">
+        <img src="/img/icon-dan_brown.jpg">
+        <div class="autor-info">
+          <h3>Dan Brown</h3>
+          <p>Famoso pelo Codigo <br> Da Vinci </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
